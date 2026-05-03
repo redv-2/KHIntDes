@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed": "#2c1600",
+                      "on-surface-variant": "#434842",
+                      "surface-container": "#edefdf",
+                      "secondary-fixed-dim": "#cac6bc",
+                      "surface-container-highest": "#e2e4d4",
+                      "secondary": "#605e56",
+                      "primary-fixed-dim": "#b6ccb6",
+                      "tertiary-container": "#c39465",
+                      "on-primary-fixed-variant": "#384b3a",
+                      "on-background": "#1a1d13",
+                      "on-secondary-container": "#66645c",
+                      "on-tertiary-fixed-variant": "#623f18",
+                      "on-secondary": "#ffffff",
+                      "surface-bright": "#f9fbeb",
+                      "surface": "#f9fbeb",
+                      "background": "#f9fbeb",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed": "#1c1c15",
+                      "primary-fixed": "#d1e9d1",
+                      "surface-container-low": "#f3f5e5",
+                      "secondary-fixed": "#e6e2d7",
+                      "primary-container": "#8da38e",
+                      "outline-variant": "#c3c8c0",
+                      "on-primary-container": "#263929",
+                      "surface-tint": "#4f6351",
+                      "on-tertiary-container": "#4d2d07",
+                      "on-error-container": "#93000a",
+                      "surface-variant": "#e2e4d4",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-high": "#e8eada",
+                      "on-tertiary": "#ffffff",
+                      "primary": "#4f6351",
+                      "on-surface": "#1a1d13",
+                      "inverse-on-surface": "#f0f2e2",
+                      "tertiary-fixed": "#ffdcbd",
+                      "on-secondary-fixed-variant": "#48473f",
+                      "outline": "#737872",
+                      "error": "#ba1a1a",
+                      "inverse-surface": "#2f3227",
+                      "on-primary": "#ffffff",
+                      "surface-dim": "#d9dbcc",
+                      "inverse-primary": "#b6ccb6",
+                      "tertiary": "#7d562d",
+                      "error-container": "#ffdad6",
+                      "secondary-container": "#e6e2d7",
+                      "on-primary-fixed": "#0d1f11",
+                      "tertiary-fixed-dim": "#f0bd8b"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "margin-mobile": "16px",
+                      "section-gap": "80px",
+                      "container-max": "1280px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "h1": ["Noto Serif"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "h2": ["Noto Serif"],
+                      "h3": ["Noto Serif"],
+                      "label-sm": ["Plus Jakarta Sans"],
+                      "body-lg": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "h2": ["36px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                      "h3": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                      "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .organic-mask {
+            border-radius: 60% 40% 70% 30% / 40% 50% 60% 50%;
+        }
+        .bubbly-shadow {
+            box-shadow: 0 10px 40px -10px rgba(79, 99, 81, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-emerald-100 dark:border-emerald-900/30 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+<div class="text-2xl font-semibold text-emerald-900 dark:text-emerald-50 hover:scale-110 ease-in-out duration-300">
+                Kate Hudson
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-emerald-700 dark:text-emerald-300 relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-emerald-700 after:rounded-full font-serif text-lg tracking-tight hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors duration-300" href="#portfolio">Portfolio</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-serif text-lg tracking-tight hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors duration-300" href="#social">Social Media</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-serif text-lg tracking-tight hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors duration-300" href="#about">About</a>
+<a class="ml-4 px-6 py-2 bg-primary text-on-primary rounded-full font-label-sm active:scale-95 transition-transform duration-200" href="#contact">Contact</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="pt-32 pb-20 px-6 max-w-7xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 space-y-8">
+<span class="inline-block px-4 py-1.5 bg-primary-fixed text-on-primary-fixed-variant rounded-full font-label-sm uppercase tracking-widest">Interior Design Studio</span>
+<h1 class="font-h1 text-h1 text-on-surface">Interior designer for all of your needs</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                    Providing quality across Kent.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="px-8 py-4 bg-primary text-on-primary rounded-full font-label-sm hover:opacity-90 active:scale-95 transition-all bubbly-shadow" href="#portfolio">EXPLORE PORTFOLIO</a>
+<a class="px-8 py-4 border-2 border-primary text-primary rounded-full font-label-sm hover:bg-primary/5 active:scale-95 transition-all" href="#about">CONTACT</a>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="organic-mask w-full aspect-square overflow-hidden bg-surface-container bubbly-shadow relative z-10">
+<img alt="Elegant interior" class="w-full h-full object-cover" data-alt="Luxurious modern living room with organic shaped furniture, sage green accents, soft natural light streaming through large windows and plush textiles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcVS4MRPE5HXiJwQdJEpPd0WTJzjRQKMu7x8LZB8Cho1SWg80wcvX2sasFsIs2kTTrP3beUD6YTD8r6h-xlFQHMZkCxGqtvMieJhbNpN05XMq9Sz-MBwLvXm6vQ3Ng6fTuxJnqQ3U_Kg883I_JwGKyJCmuKnQh8BjDsfLIDhn4KaOMe-dJySP3F_ZDF8jAWVwzjFfgkWQuQ41v8bdDmEix-NixFt3GmeZJBXuKpB3bWTf8TKT9VMLEGtXPH_TI8Ylp1XgShJtQ4oE"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-tertiary-container/20 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-primary-fixed/30 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</header>
+<!-- Portfolio Section (Bento/Bubbly Grid) -->
+<section class="py-20 px-6 max-w-7xl mx-auto" id="portfolio">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-h2 text-on-surface mb-4">Featured Collections</h2>
+<div class="w-24 h-1 bg-primary-container mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="group relative bg-surface-container-low rounded-[40px] overflow-hidden p-4 transition-all hover:translate-y-[-8px]">
+<div class="aspect-[4/5] rounded-[32px] overflow-hidden mb-6">
+<img alt="The Greenhouse" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sun-drenched breakfast nook with hanging plants, white oak table, and soft linen curtains in a modern organic kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWCLPqY3LUvzypLexQdILEOf4bGz8kCba5_H3Egc_OEG_HpvaRHPETPZVGszppny4cqynxyf9_uN76HpnLlNIchrBsekgu3_cDUsrU1yffb6FJz5vEK342ghqVSXJ6PeGMnEbZGpqcxJsZDntJnRHOJYVh4vjpHwl-yf5aY19AMbVgDHKaIK9qZ4Z2ejLyLM7WdhS-WoE3aBYXXHx93pPDidML4LVAZG3huqVx09qUFS6p7ZDd5RiRNcbKPi7jfeUD4_vXL9cYs2Y"/>
+</div>
+<div class="px-4 pb-4">
+<p class="font-label-sm text-primary mb-1">RESIDENTIAL</p>
+<h3 class="font-h3 text-h3 text-on-surface">The Greenhouse</h3>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative bg-surface-container-low rounded-[40px] overflow-hidden p-4 transition-all hover:translate-y-[-8px] lg:mt-12">
+<div class="aspect-[4/5] rounded-[32px] overflow-hidden mb-6">
+<img alt="Velvet Skies" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Moody primary bedroom with deep forest green walls, velvet headboard, and brass sconces casting a warm amber glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoASHYpRWWw4nQQNmfUffwwmLvZI9T7Kcyk9XJSLNqUygYDErCX80HVZ5YrH-yQyV8z9pBa95VyqBVHt0RInI15Fv6955gfsoheKgsQ8xA4xj1gPXv35PmrEZmZD-7AO1h4AVfMbrc_p-XO32jEWKpAcv3UE3WI3vSiTr0mmck2qXiTPuRFjFyeXSMDVgfpvoJaBA-QWCHLMEUl_pNH2lN86DrdKXAOtSMgJ1Y8YfX8BDTJ0QAZVJf9axDr2YaQpZcn7gmiujdm4Q"/>
+</div>
+<div class="px-4 pb-4">
+<p class="font-label-sm text-primary mb-1">RENOVATION</p>
+<h3 class="font-h3 text-h3 text-on-surface">Velvet Skies</h3>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group relative bg-surface-container-low rounded-[40px] overflow-hidden p-4 transition-all hover:translate-y-[-8px]">
+<div class="aspect-[4/5] rounded-[32px] overflow-hidden mb-6">
+<img alt="Minimalist Loft" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Spacious industrial loft with high ceilings, exposed brick, large abstract canvas art, and a neutral cream sectional sofa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-OGKs29mVX3z7t8G6lSKFSM89PPI0MZ1FWdQVoPVCeVgvv-_VRzkY6PppONjYhK0M254b21oxSMbKbKyVttpFXBIITbNbNg7UJzwTSCvTRLvM-WLBWCAHNOmj6F2t7qFn62ZPw3-hhQzBGgglbJwbx2YaTNoIeFpQ1W7DUvlBUL9g6wr9qknUAnWYY1HoCwixNoJysGm6hTBQAlNQ6M9sxskmx35q2HWa6c-CjkNWWSW7Nd0zzso1dMHWevZQYPISdyyWQPCgzgY"/>
+</div>
+<div class="px-4 pb-4">
+<p class="font-label-sm text-primary mb-1">URBAN</p>
+<h3 class="font-h3 text-h3 text-on-surface">Minimalist Loft</h3>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-emerald-50 dark:bg-zinc-950 w-full rounded-t-[40px] mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<span class="font-serif italic font-semibold text-2xl text-emerald-900 dark:text-emerald-50">Kate Hudson Interiors</span>
+<p class="font-serif text-sm text-emerald-700/70 dark:text-zinc-500 mt-2">© 2024 Kate Hudson Interiors. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-serif text-sm">
+<a class="text-emerald-700/70 dark:text-zinc-500 hover:underline decoration-emerald-300 transition-all duration-300 ease-in-out" href="#">Privacy Policy</a>
+<a class="text-emerald-700/70 dark:text-zinc-500 hover:underline decoration-emerald-300 transition-all duration-300 ease-in-out" href="#">Terms of Service</a>
+<a class="font-bold text-emerald-800 dark:text-emerald-200 hover:underline decoration-emerald-300 transition-all duration-300 ease-in-out" href="#">Instagram</a>
+<a class="font-bold text-emerald-800 dark:text-emerald-200 hover:underline decoration-emerald-300 transition-all duration-300 ease-in-out" href="#">Pinterest</a>
+</div>
+</div>
+</footer>
+</body></html>
